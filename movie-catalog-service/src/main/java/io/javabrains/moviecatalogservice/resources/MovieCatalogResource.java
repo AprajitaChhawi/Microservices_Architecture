@@ -1,5 +1,6 @@
 package io.javabrains.moviecatalogservice.resources;
 
+import com.netflix.discovery.DiscoveryClient;
 import io.javabrains.moviecatalogservice.models.CatalogItem;
 import io.javabrains.moviecatalogservice.models.Movie;
 import io.javabrains.moviecatalogservice.models.Rating;
@@ -28,6 +29,10 @@ public class MovieCatalogResource {
                         "Transformers","Test",4)
         );
     }
+
+    @Autowired
+    private DiscoveryClient discoveryClient;  // this is the interface to be used if we want more programmatic control over load balancing
+
     @Autowired
     private RestTemplate restTemplate;
     @RequestMapping("/{userId}")
@@ -37,10 +42,10 @@ public class MovieCatalogResource {
         //2.for each movie id , call movieInfo service and get details
         //3.put it all together
 
-        UserRating ratings = restTemplate.getForObject("http://localhost:8083/ratingsdata/user/"+ userId , UserRating.class);
+        UserRating ratings = restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/"+ userId , UserRating.class);
         //2 . implementation of 2nd & 3rd part
         return ratings.getUserRatings().stream().map(rating -> {
-                    Movie movie = restTemplate.getForObject("http://localhost:8082/movies/" + rating.getMovieId(), Movie.class);
+                    Movie movie = restTemplate.getForObject("http://movie-info-service/movies/" + rating.getMovieId(), Movie.class);
                     return new CatalogItem(movie.getName(), "Hello , this is test", rating.getRating());
                 })
                 .collect(Collectors.toList());
