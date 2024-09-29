@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="final changes done for part 1">
+    <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="part 2 changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/MovieCatalogResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/MovieCatalogResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/MovieInfoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/MovieInfoServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/resources/MovieResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/resources/MovieResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727437766598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="part 2 changes">
+      <option name="closed" value="true" />
+      <created>1727600267438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727600267438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -279,7 +281,8 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="changes" />
     <MESSAGE value="final changes done for part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="final changes done for part 1" />
+    <MESSAGE value="part 2 changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="part 2 changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
