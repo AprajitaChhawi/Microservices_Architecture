@@ -31,9 +31,6 @@ public class MovieCatalogResource {
     }
 
     @Autowired
-    private DiscoveryClient discoveryClient;  // this is the interface to be used if we want more programmatic control over load balancing
-
-    @Autowired
     private RestTemplate restTemplate;
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId){
