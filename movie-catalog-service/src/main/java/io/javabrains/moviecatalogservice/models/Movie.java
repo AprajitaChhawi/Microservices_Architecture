@@ -11,6 +11,9 @@ public class Movie {
         this.overview = overview;
     }
 
+    public Movie(){
+
+    }
     public String getMovieId() {
         return movieId;
     }
